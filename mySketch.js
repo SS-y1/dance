@@ -42,7 +42,9 @@ let amp1;
 
 //1.预读器（新建函数用来读取上传的音频和图像）
 function preload() {
-  song = loadSound("Everglow - Patrick Patrikios.mp3");
+  const musicUrl = callAndroid();
+  song = loadSound(musicUrl);
+  // song = loadSound("Everglow - Patrick Patrikios.mp3");
   img1 = loadImage("processingmoon.png");  // Load the image into the program
   img2 = loadImage("processingplanet1.png");
   img3= loadImage("processingplanet2.png");
@@ -50,9 +52,10 @@ function preload() {
   img5= loadImage("processingufo.png");
  // space = loadImage("space.png");
 }
+
 //2.初始化
 function setup() {
-  createCanvas(1600, 900); //创建画布
+  createCanvas(windowWidth, 900); //创建画布
 
   colorMode(HSB);
  // song.play();
