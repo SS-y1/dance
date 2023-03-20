@@ -4,13 +4,9 @@
         <script src="mySketch.js" type="text/javascript"> </script>
         <script src="p5.js" type="text/javascript"></script>
         <script src="p5.sound.min.js" type="text/javascript"></script>
-        <button onclick="callAndroid()">调Android方法</button>
-        <span class = "text"></span>
-        <span class = "text0"></span>
+    
         <script type="text/javascript">
             function callAndroid(){
-                 document.querySelector('.text').innerHTML = Vine.showString()
-                document.querySelector('.text0').innerHTML = typeof(Vine.showString())
                 return Vine.showString();
             }
         </script>
