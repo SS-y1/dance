@@ -55,7 +55,7 @@ function preload() {
 
 //2.初始化
 function setup() {
-  createCanvas(windowWidth, 900); //创建画布
+  createCanvas(1600, 900); //创建画布
 
   colorMode(HSB);
  // song.play();
